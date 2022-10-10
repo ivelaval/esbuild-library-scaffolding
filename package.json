@@ -1,0 +1,19 @@
+{
+  "name": "esbuild-library-scaffolding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "ts-types": " tsc --emitDeclarationOnly --outDir lib",
+    "build": "rimraf lib && node ./esbuild.js && npm run ts-types"
+  },
+  "keywords": [],
+  "author": "Ivan Avila <ivelaval@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.15.10",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.4"
+  }
+}
